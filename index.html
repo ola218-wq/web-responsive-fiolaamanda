@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal RPL SMKN 9 Medan - Responsive Layout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- HEADER -->
+    <header class="header glass-box">
+      <div class="logo">
+        <img src="smkn9_.png" alt="Logo SMKN 9 Medan" class="brand-logo">
+        <img src="rpl.png" alt="Logo RPL" class="brand-logo">
+        <div class="brand-text">
+          <span class="brand-title">RPL SMKN 9 MEDAN</span>
+          <span class="brand-subtitle">Rekayasa Perangkat Lunak</span>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="#">Beranda</a>
+        <a href="#">Kurikulum</a>
+        <a href="#">Karya Siswa</a>
+        <a href="#">Kontak</a>
+      </nav>
+      <button class="hamburger-btn" aria-label="Menu">&#9776;</button>
+    </header>
+
+    <!-- SIDEBAR KIRI (Dihilangkan di Smartphone) -->
+    <aside class="sidebar-kiri glass-box">
+      <h3>Menu Cepat</h3>
+      <ul>
+        <li>Jadwal Praktikum</li>
+        <li>Modul Pemrograman Web</li>
+        <li>Daftar Lab RPL</li>
+        <li>Info PKL &amp; LSP</li>
+      </ul>
+    </aside>
+
+    <!-- KONTEN UTAMA -->
+    <main class="konten-utama glass-box">
+      <div class="section-header">
+        <span class="badge">Praktikum Web Responsif</span>
+        <h2>Berita &amp; Proyek Terbaru Kelas XII RPL</h2>
+      </div>
+
+      <div class="card-grid">
+        <article class="card glass-card">
+          <img src="berita-bagiaan1.jpg" alt="Aplikasi Inventaris QR" class="card-img">
+          <h4>Aplikasi Inventaris QR</h4>
+          <p>Sistem peminjaman alat laboratorium berbasis web responsif dengan pemindai QR Code.</p>
+        </article>
+        <article class="card glass-card">
+          <img src="berita-bagian2.jpg" alt="Portal CBT Online" class="card-img">
+          <h4>Portal CBT Online</h4>
+          <p>Platform ujian berbasis komputer yang adaptif pada desktop lab maupun smartphone.</p>
+        </article>
+        <article class="card glass-card">
+          <img src="berita-bagian3.jpg" alt="E-Katalog Produk PKK" class="card-img">
+          <h4>Dari Baris Kode ke Etalase Karya Siswa</h4>
+          <p>Etalase digital karya kreatif siswa jurusan Rekayasa Perangkat Lunak.</p>
+        </article>
+        <article class="card glass-card">
+          <img src="berita-bagian-4.jpg" alt="Sistem Absensi Kelas" class="card-img">
+          <h4>Sistem Absensi Kelas</h4>
+          <p>Pencatatan kehadiran siswa secara cepat dan terstruktur untuk kegiatan belajar mengajar.</p>
+        </article>
+        <article class="card glass-card">
+          <img src="berita-bagian5.jpg" alt="Portofolio Projek RPL" class="card-img">
+          <h4>Bedah Logika & Debugging Bareng Tim RPL</h4>
+          <p>Kumpulan aplikasi web dan antarmuka modern hasil praktikum siswa kelas XII.</p>
+        </article>
+        <article class="card glass-card">
+          <img src="berita-bagian6.jpg" alt="Jurnal PKL Siswa" class="card-img">
+          <h4>SiswSimulasi Ujian Digital Anti-Lemot di Lab</h4>
+          <p>Pencatatan kegiatan harian siswa selama Praktik Kerja Lapangan.</p>
+        </article>
+      </div>
+
+      <!-- CHATBOT AI MANDIRI (TANPA ADMIN) -->
+      <section class="chatbot-section glass-card" aria-label="Asisten Chatbot RPL">
+        <div class="chatbot-header">
+          <div>
+            <h3>Asisten AI RPL</h3>
+            <p>Tanya apa saja seputar pemrograman web, RPL, atau topik umum (balasan otomatis).</p>
+          </div>
+          <span class="status-pill">AI Aktif</span>
+        </div>
+
+        <div id="chat-messages" class="chat-messages">
+          <div class="chat-msg bot-msg">
+            Halo! Aku Asisten AI RPL. Silakan tanya apa saja—mulai dari CSS Grid/Flexbox, HTML/JS, sampai pertanyaan umum lainnya.
+          </div>
+        </div>
+
+        <form id="chat-form" class="chat-form">
+          <input
+            type="text"
+            id="chat-input"
+            placeholder="Tulis pertanyaanmu di sini..."
+            autocomplete="off"
+            required
+          >
+          <button type="submit">Kirim</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- WIDGET PROMO KANAN (Dihilangkan di Tablet & Smartphone) -->
+    <aside class="widget-promo glass-box">
+      <h3>Info &amp; Promo Lab</h3>
+      <div class="promo-box">
+        <strong>Uji Kompetensi LSP!</strong>
+        <p>Persiapkan portofolio web responsif kalian sebelum jadwal asesmen.</p>
+      </div>
+    </aside>
+
+    <!-- FOOTER -->
+    <footer class="footer glass-box">
+      <p>&copy; 2026 Jurusan RPL SMK Negeri 9 Medan — Modul Pemrograman Web Lanjut</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</body>
+</html>
