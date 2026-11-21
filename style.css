@@ -411,6 +411,24 @@ body {
     display: none;
   }
 
+  /* Saat menu dibuka lewat tombol hamburger */
+  .nav-links.active,
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 999;
+    background: rgba(15, 23, 42, 0.97);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 14px;
+    padding: 12px;
+    margin-top: 10px;
+    gap: 8px;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.45);
+  }
+
   .hamburger-btn {
     display: block;
   }
